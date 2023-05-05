@@ -6,7 +6,7 @@ YUZU_DIR="~/.local/share/yuzu"
 FW_VERSION=$(curl https://yls8.mtheall.com/ninupdates/feed.php | grep -m 1 "Switch" | grep -Eo "[0-9]+\.[0-9]+\.[0-9]+")
 
 # Grab latest EA Yuzu
-curl -s https://api.github.com/repos/pineappleEA/pineapple-src/releases/latest | jq -r ".assets[0] | .browser_download_url" | wget -qO "~/Applications/Yuzu.AppImage" --show-progress -i -
+curl -s https://api.github.com/repos/pineappleEA/pineapple-src/releases/latest | jq -r ".assets[0] | .browser_download_url" | wget -qO ~/Applications/Yuzu.AppImage --show-progress -i -
 chmod +x ~/Applications/Yuzu.AppImage
 
 # Get latest keys (mind the URL)
