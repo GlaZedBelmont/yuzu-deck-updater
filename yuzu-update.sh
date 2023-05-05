@@ -12,7 +12,7 @@ curl -s https://api.github.com/repos/pineappleEA/pineapple-src/releases/latest |
 chmod +x "/home/deck/Applications/Yuzu.AppImage"
 
 # Get latest keys (mind the URL)
-wget -qO "$YUZU_DIR/keys/prod.keys" "https://sigmapatches.coomer.party/prod.keys" && echo "Downloaded keys for $FW_VERSION"
+wget -qO "$YUZU_DIR/keys/prod.keys" "https://github.com/icosaswitch/Yuzu-NAND/raw/master/prod.keys" && echo "Downloaded keys"
 
 # Get latest firmware and extract it
 wget -qO "$YUZU_DIR/nand/system/Contents/registered/firmware.zip" "https://archive.org/download/nintendo-switch-global-firmwares/Firmware%20$FW_VERSION.zip" && echo "Downloaded firmware $FW_VERSION"
